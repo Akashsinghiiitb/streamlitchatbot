@@ -10,9 +10,9 @@ llm = HuggingFaceEndpoint(
 
 model = ChatHuggingFace(llm=llm) 
 
-st.header("Research tool")
+st.header("this chatbot is developed by Akash Singh")
 user_input=st.text_input("Enter your prompt")
 
-if st.button("Summarize"):
+if st.button("click here"):
     result=model.invoke(user_input)
     st.write(result.content)
